@@ -79,7 +79,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 | order by Timestamp desc
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b13707ae-8c2d-4081-a381-2b521d3a0d8f">
+<img width="1501" height="398" alt="Screenshot 2026-02-12 175550" src="https://github.com/user-attachments/assets/6cf0fd51-667d-4818-8553-0ed90d893ac7" />
+
 
 ---
 
@@ -96,7 +97,8 @@ DeviceNetworkEvents
 | where RemotePort in (80, 443, 4443, 6667, 8080, 9001, 9030, 9040, 9050, 9051, 9100, 9150, 50652, 50654)
 | project Timestamp, DeviceName, InitiatingProcessAccountName, InitiatingProcessFileName, ActionType, RemoteIP, RemotePort, RemoteUrl, InitiatingProcessFolderPath
 ```
-<img width="1492" height="376" alt="Screenshot 2026-02-12 175641" src="https://github.com/user-attachments/assets/e4be6377-0a01-44b2-98dd-e8f7060bddf0" />
+<img width="1492" height="376" alt="Screenshot 2026-02-12 175641" src="https://github.com/user-attachments/assets/d7c86f89-d58d-44ee-893b-2c3e1ddaea8c" />
+
 
 
 ---
