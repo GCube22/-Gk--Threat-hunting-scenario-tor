@@ -34,13 +34,13 @@ These events began at: 2026-02-11T01:35:44.2103073Z
 **Query used to locate events:**
 
 ```kql
-DeviceFileEvents  
-| where DeviceName == "threat-hunt-lab"  
-| where InitiatingProcessAccountName == "employee"  
-| where FileName contains "tor"  
-| where Timestamp >= datetime(2024-11-08T22:14:48.6065231Z)  
-| order by Timestamp desc  
-| project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
+DeviceFileEvents
+| where FileName contains "tor"
+| where DeviceName == "kulle-vm-to-mde"
+| where InitiatingProcessAccountName == "kulleuser"
+| where Timestamp >= datetime(2026-02-11T01:35:44.2103073Z)
+| order by Timestamp desc
+| project Timestamp, DeviceName, ActionType, FolderPath, SHA256, Account = InitiatingProcessAccountName
 ```
 <img width="1547" height="698" alt="Screenshot 2026-02-12 170812" src="https://github.com/user-attachments/assets/d2fbaf2a-f8b4-4e38-a1a5-ffd77bff335a" />
 ">
