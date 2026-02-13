@@ -58,7 +58,7 @@ Searched for any `ProcessCommandLine` that contained the string "tor-browser-win
 
 DeviceProcessEvents
 | where DeviceName == "kulle-vm-to-mde"
-| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-15.0.5.exe"
+| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-15.0.5.exe."
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 ```
 <img width="1505" height="267" alt="Screenshot 2026-02-12 175521" src="https://github.com/user-attachments/assets/43f5c727-2693-4fa9-80ae-d87f9f8769f8" />
